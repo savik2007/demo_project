@@ -27,6 +27,5 @@ jobs:
   include:
   - stage: "test and build"
     name: "Build Docker container"
-    script:
-      - make: staging_build
+    script: make staging_build
 
