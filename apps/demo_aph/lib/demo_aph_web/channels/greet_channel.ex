@@ -7,7 +7,7 @@ defmodule DemoAphWeb.GreetChannel do
     greet = Greeter.hello(name)
     {:ok, greet}
   end
-#  @spec handle_in(String.t(), map(), any()) ::  {:noreply, any()}
+  @spec handle_in(String.t(), map(), any()) ::  {:noreply, any()}
   def handle_in("greet", %{"name" => name}, socket) do
     :io.format("~nname: ~p~n", [name])
     broadcast! socket, "greet", %{msg: Greeter.hello(name)}
