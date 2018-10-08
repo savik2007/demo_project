@@ -1,0 +1,32 @@
+language: elixir
+git:
+  depth: 1000
+cache:
+  directories:
+  - _build
+  - deps
+services:
+  - docker
+elixir:
+  - 1.6.6
+otp_release:
+  - 21.0
+notifications:
+  slack:
+    rooms:
+      - secure:
+    on_success: always
+    on_failure: always
+env:
+  global:
+  - MIX_ENV=prod
+branches:
+  only:
+  - devel
+jobs:
+  include:
+  - stage: "test and build"
+    name: "Build Docker container"
+    script:
+      - make: staging_build
+
