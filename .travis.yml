@@ -17,11 +17,9 @@ notifications:
     - andr.savenkov@i.ua
     on_success: always
     on_failure: always
-  slack:
+  slack: saviknotification:5iILQEYqbrPnUvYxVQm6AJK4
     on_success: always
     on_failure: always
-    rooms:
-      - saviknotification:5iILQEYqbrPnUvYxVQm6AJK4#slack-notification
 env:
   global:
   - MIX_ENV=prod
