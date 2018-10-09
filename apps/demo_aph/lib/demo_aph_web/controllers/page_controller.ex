@@ -6,6 +6,8 @@ defmodule DemoAphWeb.PageController do
   end
 
   def date() do
-    Calendar.datetime()
+    date_time = :calendar.local_time()
+    now = :calendar.datetime_to_gregorian_seconds(date_time)
+    %{now: now}
   end
 end
