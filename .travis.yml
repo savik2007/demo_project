@@ -6,17 +6,14 @@ cache:
   - _build
   - deps
 services:
-  - docker
+- docker
 elixir:
-  - 1.6.6
+- 1.6.6
 otp_release:
-  - 21.0
+- 21.0
 notifications:
   slack:
-    rooms:
-      - secure:
-    on_success: always
-    on_failure: always
+    secure: tgnGdVZffdcXOiTy4S4QlJlW6+36B0Hab7XJU6bYWkXXjdj2nMgfeKFvySSqnYtPMWrY8LY5is0L6rkvBVsEdJHHHkPmLY4vaLoQsGEPIkGDx3Hul2bJm+sNoUUwJuVPOOUrVRvmpW3XV3fxX55V7aR+/Osfhg2afsexzEtxd6h/hzwvl5x6IJla9CHtUf1Zvwxc7P44f1uWE5OIbcjOQaYgTdvnSKSgisN6PHapXeP2IPl2tbsG62naXwsh9SJ01rpN+ZxoLCSpQmyV8IAOh128EDU9Qya0QiIDwWwxRMU744xmv/gykz/1e3mojk9XULSaTqH5ZjIyFUtkwqOoTDXESweczdQHeSvruiXqh3js/g86MlOhPxxsKPWLewB9xYX4LGl6AjivWQFqCiJzqaBL4AmUW1RyAK9011nzXSIKtFYnOyhTM33Q6QyhPfa1hdCBvMXTRGi41I8nkWuOjhQuTyUj82wEmBDXIcN86ainj/6dFouarGfGhDFVSfQtUhbR8KQHHKwrwqGAV35akVd9RfIxgyS7qMYMl+ARqzrSwMT15+Y+uvJuPQRrmWPZhsD4/pAOesWf/+/DaYh2D2y2Re/aElHOopKPF61LJLDOXpiFh0VnSnwufynjaZNPpk3w6AqFEu7bFaVbvwxAPDJEgC+wWtJXoNHNUMTi1ZQ=
 env:
   global:
   - MIX_ENV=prod
@@ -25,7 +22,6 @@ branches:
   - devel
 jobs:
   include:
-  - stage: "test and build"
-    name: "Build Docker container"
+  - stage: test and build
+    name: Build Docker container
     script: make staging_build
-
