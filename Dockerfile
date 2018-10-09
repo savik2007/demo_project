@@ -17,7 +17,7 @@ RUN mix do \
       deps.get, \
       deps.compile
 
-RUN mix dialyzer --halt-exit-status
+#RUN mix dialyzer --halt-exit-status
 RUN mix test
 
 RUN rm -rf ./deps
