@@ -20,6 +20,7 @@ defmodule DemoAphWeb.Router do
   scope "/", DemoAphWeb do
     pipe_through [:browser, :authentication]
     get "/", PageController, :index
+    get "/date", PageController, :date
   end
 
   # Other scopes may use custom stacks.
