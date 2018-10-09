@@ -14,14 +14,10 @@ otp_release:
 notifications:
   email:
     recipients:
-      - andr.savenkov@i.ua
-    on_success: always
-    on_failure: always
+    - andr.savenkov@i.ua
   slack:
     rooms:
-      - secure: "mYk5tJga1m1P83cDAi8YXxOOu2XofxwclM+EwF954XERj9hjP3Wq+vLzw25FlsNBskgqVGVy1+lOM/aP3SLosOKfhBuxA745HlpT5Oo3umJVBfBlsZY/yDKbcR6uNN0JH0h9w2U+tvmut/NmeoG8mvuRAfZhk6MelqEn25Idd/JVGFDxhfysfzNRgUhF3oy6/kkgOSuaOABMtw6rqFej6b9nWLGiw56AyOHOi5F8ADibBOVKkS0vXkCx2RRAalrp+Iu63Qkib7btkP1zYFMI4Ha99K4V1bg8Zy5bL9NYQQeKenn8im3ETYKckSbzsAywS0HOQYs7oaos9d+dQCS7Dh+1GDPFQgWHo/X3u6lmFo97+w2FRhKveaQ6BowsQ9Ps/V+1pk5CFgl7nZo5R4PIq526OBzR2nhMNgyh/B5IflmivA+TtCCVekQkI8HDl8LgHJ7qFAXtrhqZOmtwV6ZtOJPDdEiykHh0m1I5pk1L/gmnqHsCZdSg8yKEqNiScdpxXkVe1s9HOfte/JxN6cRkarDIzvM+A+e/tuy7zu+eG8iXp0D5zLC6xq6NMLIbIjggX4N4DtdOkxlzFoMAyEdh8al8KcB2pN2lguOsOt5FykhAJvvn4ytJKH49VSwAN9kiIjtXu9n/eJ0t2XV48BS6tnIO9eYMS4wWhY/UV3nCFgc="
-    on_success: always
-    on_failure: always
+      - secure: "sNBqATKRgdI6Ir70RO2jgfBjSPpk/Qjgjstg5KtdXQKn7iSI6j5Qdor6Jiey3CU68d3e+veTdSolmLtqsWkVQyNdu+OuVoo/+Rqc4MApnJY8RrdxQfs4yzGQWPJxpWE1TIjCTC0UPC78E5joeyUnejCrw1N4lAoVPbW/F9DTR8xgVJTFWtXqxQ0SzTMJs9OYZuNBaI1uvzXUcPR9MJELVuoulqDt0yr3BeXPWMc6OblzIPJHesHKfmpqk8vDyZ7N7edcf3Q/Ao6qX7eT2l7xVJzUUqpMpyyz0BocfKShTEG5/O5HGQdLlY8n9vRzWy4KGNvNnu1zeLA4wOkRXndaLS2oA8ACqcUVx6B4KpE6/SA3tEA1hdfnq/LPV1exAPtCj7cgJ9MdU9H+iEiSHQst1twngFhR7qcEXZQsGAf8oZ1sp+CGrqC6th5Rdxij/kDFx5blWnuozZTKoz7ILBxu6Hvso6N+lNAlPQMIECXPM2Qxtw2IlEwW2Yfk3i8btF3pBe6Tal863r7QgGINeq6vgemxiZ8opQgHxnYCklsgcrU8nKsb/YJpkfVf0RT12kXOLnb4QqR60zT39HRRAR4jIQPcT9CCZIDirHTX5vO+ZyyEWDUGyM1NCP/FcVpppbrnguAFJ8Q04xLlUmtgJizGi6IxhqVmkbEdcKnFVVaWd3M="
 env:
   global:
   - MIX_ENV=prod
